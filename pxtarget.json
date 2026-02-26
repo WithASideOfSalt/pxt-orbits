@@ -1,12 +1,9 @@
 {
-    "id": "sample",
-    "name": "sample",
-    "title": "MakeCode Editor Sample",
+    "id": "orbits",
+    "name": "ORBITS, Outreach and Research Build for Interactively Teaching Satellites",
+    "title": "ORBITS Programming",
+    "descrption": "Program your ORBITS cubesat unit with blocks or code",
     "corepkg": "core",
-    "cloud": {
-        "workspace": false,
-        "packages": true
-    },
     "bundleddirs": [
         "libs/core"
     ],
@@ -16,17 +13,20 @@
       "logicBlocks": true,
       "variablesBlocks": true,
       "textBlocks": false,
-      "functionBlocks": false,
-      "listsBlocks": false
+      "functionBlocks": true,
+      "listsBlocks": false,
+      "onStartNamespace": "basic",
+      "onStartColor": "#1E3A8A",
+      "onStartWeight": 100
     },
     "simulator": {
-        "autoRun": true
+        "enabled": false
     },
     "appTheme": {
-        "logoUrl": "https://github.com/Microsoft/pxt-sample",
+        "logoUrl": "./static/OrbitsLineIcon.PNG",
         "homeUrl": "http://microsoft.github.io/pxt-sample/",
-        "privacyUrl": "https://go.microsoft.com/fwlink/?LinkId=521839",
-        "termsOfUseUrl": "https://go.microsoft.com/fwlink/?LinkID=206977",
+        "_privacyUrl": "https://go.microsoft.com/fwlink/?LinkId=521839",
+        "_termsOfUseUrl": "https://go.microsoft.com/fwlink/?LinkID=206977",
         "betaUrl": "https://makecode.com/",
         "docMenu": [
             {
@@ -38,11 +38,12 @@
                 "path": "/docs"
             }
         ],
+        "hasReferenceDocs": true,
         "coloredToolbox": false,
         "monacoToolbox": true,
         "invertedMenu": true,
         "showHomeScreen": true,
-        "homeScreenHero": "./static/hero.png",
+        "homeScreenHero": "./static/Title.PNG",
         "blocklyOptions": {
             "grid": {
                 "spacing": 45,
@@ -62,5 +63,13 @@
         "monacoColors": {
             "editor.background": "#ecf0f1"
         }
+    },
+    "blockColors": {
+        "sensors": "#8B5CF6",
+        "power": "#F59E0B",
+        "telemetry": "#10B981",
+        "navigation": "#06B6D4",
+        "loops": "#3B82F6",
+        "logic": "#60A5FA"
     }
 }
